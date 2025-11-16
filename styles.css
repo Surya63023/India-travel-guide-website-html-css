@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #001f3f, #003f7f, #0074d9);
+  color: #f0f0f0;
+  line-height: 1.8;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: #fff;
+  background: linear-gradient(90deg, #ffb347, #ffcc33);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #ffcc33;
+  margin: 20px 0 10px;
+  text-align: left;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: #00e6e6;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+p {
+  color: #eaeaea;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+div {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+}
+
+button {
+  background: linear-gradient(90deg, #ff8c00, #ff0080);
+  border: none;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #ff0080, #ff8c00);
+  transform: scale(1.08);
+}
+
+a {
+  text-decoration: none;
+}
+
+iframe {
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin-top: 15px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, #ff8c00, #ff0080);
+  margin: 40px 0;
+  border-radius: 3px;
+}
+
+#top {
+  text-align: center;
+}
+
+div h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin-top: 6px;
+  background: linear-gradient(90deg, #ff8c00, #ff0080);
+  border-radius: 5px;
+}
+
+div button {
+  margin: 5px 5px;
+}
+
+a[href="#top"] button {
+  background: linear-gradient(90deg, #00b09b, #96c93d);
+  border-radius: 30px;
+  font-size: 1.1rem;
+  padding: 10px 25px;
+}
+
+a[href="#top"] button:hover {
+  background: linear-gradient(90deg, #96c93d, #00b09b);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  iframe {
+    height: 300px;
+  }
+
+  button {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+
+  div {
+    padding: 18px;
+  }
+}
